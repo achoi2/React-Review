@@ -2,7 +2,7 @@ class DescisionApp extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            options: props.options
+            options: []
         };
 
         this.handleDeleteOptions = this.handleDeleteOptions.bind(this);
@@ -86,9 +86,6 @@ class DescisionApp extends React.Component {
     }
 }
 
-DescisionApp.defaultProps = {
-    options: []
-};
 
 const Header = props => {
     return (
